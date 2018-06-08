@@ -1,0 +1,83 @@
+@import "../../../common/css/base";
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid @border-color;
+  background: @base-color;
+  .header_left{
+    p{
+      padding: 0;
+      margin: 0;
+      font-size: 1.2rem;
+      line-height: 3rem;
+      color: @header-color;
+    }
+  }
+  .header_right{
+    display:flex;
+    p{
+      margin: 0;
+    }
+    .audio_log{
+      display: flex;
+      padding: 0 10px;
+      .daily_box{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        i{
+          display: inline-block;
+          height: 1px;
+        }
+      }
+      .daily{
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+      }
+      .audio_text{
+        font-size: 0.85rem;
+        color: @header-color;
+        line-height: 3rem;
+        padding: 0 5px;
+      }
+    }
+    .user_infor{
+      display: flex;
+      .avatar_box{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        span{
+          display: inline-block;
+          height: 1px;
+        }
+        .avatar{
+          width: 30px;
+          height: 30px;
+          border-radius:50% ;
+        }
+      }
+      .logout_box{
+        display: flex;
+        .name{
+          font-size: 0.85rem;
+          line-height: 3rem;
+          padding: 0 10px;
+          color: @header-color;
+        }
+        .logout{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          color: @header-color;
+          i{
+            display: inline-block;
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}
